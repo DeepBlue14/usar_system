@@ -1,0 +1,8 @@
+<!-- respawn="true" -->
+<!-- respawn_delay="30" -->
+<!-- required="true" -->
+
+<launch>
+    <node pkg="trajectory_rgbd" type="center_depth" name="center_depth" output="screen" ></node>
+    <node pkg="trajectory_rgbd" type="scope" name="scope" output="screen" ></node>
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="sound_play" type="soundplay_node.py" name="soundplay_node" output="screen" required="true" ></node>
+    <node pkg="robot_voice" type="Chatterbot.py" name="Chatterbot" output="screen" required="true" ></node>
+    <node pkg="robot_voice" type="RobotTalker.py" name="RobotTalker" output="screen" required="true" ></node>
+</launch>

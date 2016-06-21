@@ -1,0 +1,67 @@
+/**
+ * File:   usar_joy.h
+ * Module: usar_joy
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This is developed to test the other files.  It publishes messages in a loop.
+ *
+ * Created: 1/01/2016
+ * Last Modified: 1/05/2016
+ */
+ 
+
+
+#include <ros/ros.h>
+#include <sensor_msgs/Joy.h>
+
+#include <iostream>
+
+using namespace std;
+using namespace ros;
+
+void callback(const sensor_msgs::JoyConstPtr& msg)
+{
+    /*
+     * Left joystick movement along the x-axis (i.e. left and right).
+     * 1 = all the way to the left, -1 = all the way to the right.
+     */
+    float leftJoystickX = msg->axes[0];
+    
+    /*
+     * Left joystick movement along the z-axis (i.e. backward and forward)
+     * 1 = all the way forward (away from the user), -1 = all the waybackward (toward teh user)
+     */
+    float leftJoystickZ = msg->axes[1];
+    
+    /*
+     * Right joystick movement along the x-axis
+     * 1 = all the way to the left, -1 = all the way to the right
+     */
+    float rightJoystickX = msg->axes[3];
+    
+    /*
+     * Rigth joystick movement along the z-axis
+     * 1 = all the way forward, -1 = all the way back.
+     *
+     */
+    float rightJoystickZ = msg->axes[4];
+    
+    //cout << "left-x: " << leftJoystickX << endl;
+    //cout << "leftJoystickZ: " << leftJoystickZ << endl;
+    //cout << "rightJoystickX: " << rightJoystickX << endl;
+    cout << "rightJoystickZ: " << rightJoystickZ << endl;
+}
+
+int main(int argc, char **argv)
+{
+    ros::init(argc, argv, "usar_joy");
+    
+    ros::NodeHandle nh;
+    Subscriber sub = nh.subscribe<sensor_msgs::Joy>("/joy",
+                                                      10,
+                                                      callback);
+    
+    spin();
+    
+    return 0;
+}

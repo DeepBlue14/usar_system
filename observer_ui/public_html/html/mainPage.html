@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+ ! Copyright (C) 2016 James T. Kuczynski
+ !
+ ! This software may be modified and distributed under the terms
+ ! of the MIT license.  See the LICENSE file for details.
+ -->
+
+<!--
+ ! File:   mainPage.html
+ ! Author: James Kuczynski
+ ! Email:  jkuczyns@cs.uml.edu
+ ! File Description: 
+
+ ! Created: 3/25/2016
+ ! Last Modified: 3/27/2016
+-->
+
+<html>
+    <head>
+        <title>USAR</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+        <link rel="shortcut icon" href="../res/compass.png"/>
+        <script src="../js/Client.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="outsideWrapper">
+            <div class="insideWrapper">
+                <center>
+                <img src="../res/3rdfloor_5cm.png" class="coveredImage" alt="world"/>
+                <canvas class="coveringCanvas" id="myCanvas"></canvas>
+                </center>
+            </div>
+        </div>
+        <div style="position:fixed; width:100%; height:70px; background-color:lightgreen; padding:5px; bottom:0px; ">
+            <!-- FIXME: This IP address will NOT WORK for the demo! -->
+            <a target="_blank" href="http://129.63.17.104:8080/stream_viewer?topic=/camera/rgb/image_rect_color">Video Stream</a>
+        </div>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(100, 80, 5, 5);
+            initWebSocket();
+        </script>
+    </body>
+</html>

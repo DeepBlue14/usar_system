@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!--
+ ! Copyright (C) 2016 James T. Kuczynski
+ !
+ ! This software may be modified and distributed under the terms
+ ! of the MIT license.  See the LICENSE file for details.
+ -->
+
+<!--
+ ! File:   index.html
+ ! Author: James Kuczynski
+ ! Email:  jkuczyns@cs.uml.edu
+ ! File Description: 
+ !
+ ! Make sure to run "rosrun web_video_server web_video_server" first on the
+ ! RosMaster.
+ !
+ ! Created: 3/25/2016
+ ! Last Modified: 3/27/2016
+-->
+
+<html>
+    <head>
+        <title>USAR</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="shortcut icon" href="res/compass.png"/>
+    </head>
+    <body>
+        <h1>Sign In</h1>
+        <form action="JavaScript:signIn()">
+            <table id="myTable">
+                <tr>
+                    <td>Username: </td><td><input type="text" id="usernameTd" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td><td><input type="password" id="passwordTd" name="password"></td>
+                </tr>
+            </table>
+            <div>
+                <button>Sign In</button>
+            </div>
+        </form>
+        <script>
+            function signIn()
+            {
+                var userInputUn = document.getElementById("usernameTd").value;
+                var userInputPass = document.getElementById("passwordTd").value;
+                
+                if(userInputUn === "default" && userInputPass === "default")
+                {
+                    
+                    document.location.href = "html/mainPage.html";
+                }
+                else
+                {
+                    var table = document.getElementById("myTable");
+                    
+                    if(table.rows.length < 3)
+                    {
+                        var row = table.insertRow(2);
+                        var nullCell = row.insertCell(0);
+                        var cell = row.insertCell(1);
+                        //cell.colSpan = 2;
+                        cell.id = "error";
+                        cell.innerHTML = "Invalid username or password";
+                        cell.style.color = "red";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

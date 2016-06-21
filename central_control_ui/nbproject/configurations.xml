@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="central_control_ui"
+                     displayName="central_control_ui"
+                     projectFiles="true">
+        <itemPath>include/central_control_ui/AgentDataWidget.h</itemPath>
+        <itemPath>include/central_control_ui/CCSystem.h</itemPath>
+        <itemPath>include/central_control_ui/CCTypes.h</itemPath>
+        <itemPath>include/central_control_ui/CamGroupGui.h</itemPath>
+        <itemPath>include/central_control_ui/CamGui.h</itemPath>
+        <itemPath>include/central_control_ui/CamWidget.h</itemPath>
+        <itemPath>include/central_control_ui/CentralWidget.h</itemPath>
+        <itemPath>include/central_control_ui/ClientGroupWidget.h</itemPath>
+        <itemPath>include/central_control_ui/CusLabelMenu.h</itemPath>
+        <itemPath>include/central_control_ui/CustomLabel.h</itemPath>
+        <itemPath>include/central_control_ui/LstWidContainer.h</itemPath>
+        <itemPath>include/central_control_ui/LstWidItemMenu.h</itemPath>
+        <itemPath>include/central_control_ui/MapDataWidget.h</itemPath>
+        <itemPath>include/central_control_ui/MapGui.h</itemPath>
+        <itemPath>include/central_control_ui/MapWidget.h</itemPath>
+        <itemPath>include/central_control_ui/MasterGui.h</itemPath>
+        <itemPath>include/central_control_ui/Server.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <logicalFolder name="res" displayName="res" projectFiles="true">
+        <itemPath>res/central_command.png</itemPath>
+        <itemPath>res/estop.png</itemPath>
+        <itemPath>res/observer.png</itemPath>
+        <itemPath>res/operator.png</itemPath>
+        <itemPath>res/override.png</itemPath>
+        <itemPath>res/place_holder.jpg</itemPath>
+        <itemPath>res/place_holder_small.jpg</itemPath>
+        <itemPath>res/terminate_run.png</itemPath>
+        <itemPath>res/turtlebot_icon.png</itemPath>
+        <itemPath>res/world.png</itemPath>
+        <itemPath>res/world_fit.png</itemPath>
+        <itemPath>res/world_fit_noalpha.png</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/AgentDataWidget.cpp</itemPath>
+        <itemPath>src/CCSystem.cpp</itemPath>
+        <itemPath>src/CCTypes.cpp</itemPath>
+        <itemPath>src/CamGroupGui.cpp</itemPath>
+        <itemPath>src/CamGui.cpp</itemPath>
+        <itemPath>src/CamWidget.cpp</itemPath>
+        <itemPath>src/CentralWidget.cpp</itemPath>
+        <itemPath>src/ClientGroupWidget.cpp</itemPath>
+        <itemPath>src/CusLabelMenu.cpp</itemPath>
+        <itemPath>src/CustomLabel.cpp</itemPath>
+        <itemPath>src/LstWidContainer.cpp</itemPath>
+        <itemPath>src/LstWidItemMenu.cpp</itemPath>
+        <itemPath>src/MapDataWidget.cpp</itemPath>
+        <itemPath>src/MapGui.cpp</itemPath>
+        <itemPath>src/MapWidget.cpp</itemPath>
+        <itemPath>src/MasterGui.cpp</itemPath>
+        <itemPath>src/Server.cpp</itemPath>
+        <itemPath>src/main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>res</Elem>
+    <Elem>include/central_control_ui</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets webkit</modules>
+        <mocDir>src/moc</mocDir>
+        <defs>
+          <Elem>greaterThan(QT_MAJOR_VERSION, 4){QT += webkitwidgets websockets}</Elem>
+        </defs>
+      </qt>
+      <compileType>
+      </compileType>
+      <item path="include/central_control_ui/AgentDataWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CCSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CCTypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamGroupGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CentralWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/ClientGroupWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CusLabelMenu.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CustomLabel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/LstWidContainer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/LstWidItemMenu.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapDataWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MasterGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="res/central_command.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/estop.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/observer.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/operator.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/override.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/place_holder.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/place_holder_small.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/terminate_run.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/turtlebot_icon.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world_fit.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world_fit_noalpha.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AgentDataWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CCSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CCTypes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamGroupGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ClientGroupWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CusLabelMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomLabel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LstWidContainer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LstWidItemMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapDataWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="include/central_control_ui/AgentDataWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CCSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CCTypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamGroupGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CamWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CentralWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/ClientGroupWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CusLabelMenu.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/CustomLabel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/LstWidContainer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/LstWidItemMenu.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapDataWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MapWidget.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/MasterGui.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/central_control_ui/Server.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="res/central_command.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/estop.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/observer.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/operator.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/override.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/place_holder.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/place_holder_small.jpg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/terminate_run.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/turtlebot_icon.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world_fit.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="res/world_fit_noalpha.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AgentDataWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CCSystem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CCTypes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamGroupGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CamWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ClientGroupWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CusLabelMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomLabel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LstWidContainer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LstWidItemMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapDataWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MapWidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Server.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

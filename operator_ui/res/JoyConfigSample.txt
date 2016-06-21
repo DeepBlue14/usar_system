@@ -1,0 +1,41 @@
+Possible configurations for controlling the robot_operator_ui
+=====
+
+Pros: can toggle map
+Cons: swapping focus is kind of annoying--swapping the wrong one could be problamatic
+
+
+CMD                 JOY                     Topic               Type
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
+ROBOT_MOV,        = LEFT_AXIS               /joy/robot_nav      geometry_msgs::Twist
+NERF_MOV,         = RIGHT_AXIS              /joy/turret_nav     geometry_msgs::Twist
+SWAP_TOPIC,       = D_PAD_VERT              /joy/topic          std_msgs::Int32
+FIRE_NERF,        = RIGHT_SHOULDER_TOP      /joy/fire_gun       std_msgs::Bool
+TOGGLE_UI_MODE,   = BACK                    /joy/ui_mode        std_msgs::Bool
+TOGGLE_VOICE,     = -----
+E_STOP,           = -----
+TOGGLE_UI_FOCUS,  = FACE (1, 2, 3)          /joy/focus          std_msgs::Int32
+TOGGLE_AUTONOMY,  = -----
+TOGGLE_NERF       = FORWARD                 /joy/enable_gun     std_msgs::Bool
+CONFIG_BRINGUP    = FACE (4)                /joy/config         std_msgs::Bool
+
+--------------------------------------------------------------------------------------------------
+
+Pros: more simple
+Cons: cannot toggle map
+
+CMD                 JOY                     Topic               Type
+-   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   - 
+ROBOT_MOV,        = LEFT_AXIS               /joy/robot_nav      geometry_msgs::Twist
+NERF_MOV,         = RIGHT_AXIS              /joy/turret_nav     geometry_msgs::Twist
+SWAP_TOPIC_LEFT,  = D_PAD_VERT              /joy/topic          std_msgs::Int32
+FIRE_NERF,        = RIGHT_SHOULDER_TOP      /joy/fire_gun       std_msgs::Bool
+TOGGLE_UI_MODE,   = BACK                    /joy/ui_mode        std_msgs::Bool
+TOGGLE_VOICE,     = -----
+E_STOP,           = -----
+SWAP_TOPIC_RIGHT,  = FACE (1, 4)            /joy/focus          std_msgs::Int32
+TOGGLE_AUTONOMY,  = -----
+TOGGLE_NERF       = FACE (2)                /joy/enable_gun     std_msgs::Bool
+CONFIG_BRINGUP    = FACE (3)                /joy/config         std_msgs::Bool
+
+

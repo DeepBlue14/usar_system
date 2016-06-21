@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+File: joy_options.xml
+Author: James Kuczynski
+Email: jkuczyns@cs.uml.edu
+File Description: 
+
+Created: 3/25/2016
+Last Modified: 3/27/2015
+-->
+
+<usar>
+    <joy>
+        <cmd name="ROBOT_VEL" des="Robot Nav" pri="HIGH" default="AXIS_LEFT" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="AXIS_LEFT" des="Left axis" />
+            <option enum="AXIS_RIGHT" des="Right axis" />
+        </cmd>
+        <cmd name="NERF_VEL" des="Nerf Nav" pri="HIGH" default="AXIS_RIGHT" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="AXIS_LEFT" des="Left axis" />
+            <option enum="AXIS_RIGHT" des="Right axis" />
+        </cmd>
+        <cmd name="TOGGLE_TOPIC" des="Toggle Topic" pri="LOW" default="DPAD_UP_DOWN" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="DPAD_UP_DOWN" des="D-pad up/down" />
+            <option enum="FACE_UP_DOWN" des="Face up/down" />
+        </cmd>
+        <cmd name="FIRE_NERF" des="Fire Nerf" pri="HIGH" default="RIGHT_SHOULDER_TOP" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="RIGHT_SHOULDER_TOP" des="Top right shoulder" />
+            <option enum="RIGHT_SHOULDER_BOTTOM" des="Bottom right shoulder" />
+            <option enum="LEFT_SHOULDER_TOP" des="Top left shoulder" />
+            <option enum="LEFT_SHOULDER_BOTTOM" des="Bottom left shoulder" />
+        </cmd>
+        <cmd name="TOGGLE_UI_MODE" des="Toggle UI" pri="MEDIUM" default="BACK" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="BACK" des="Select/back" />
+            <option enum="FORWARD" des="Start/forward" />
+        </cmd>
+        <cmd name="TOGGLE_VOICE" des="Toggle Voice" pir="LOW" default="NA" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="NA" des="NA" />
+        </cmd>
+        <cmd name="E_STOP" des="E-Stop" pri="HIGH" default="AXIS_LEFT_RIGHT" > <!-- e-stop CANNOT be turned off -->
+            <option enum="AXIS_LEFT_RIGHT" des="Left and right axes" />
+        </cmd>
+        <cmd name="TOGGLE_UI_FOCUS" des="Toggle UI Focus" pri="MEDIUM" default="FACE_UP_LEFT_RIGHT" > <!-- toggle which window will recieve up/down topic events -->
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="NA" des="NA" />
+            <option enum="FACE_UP_LEFT_RIGHT" des="Face up/left/right (2, 1, 3)" />
+            <option enum="DPAD_UP_DOWN" des="D-pad up/down" />
+        </cmd>
+        <cmd name="TOGGLE_AUTONOMY" des="Toggle Autonomy" pri="LOW" default="NA" > <!-- semi-autonomous/fully autonomous/fully teleop -->
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="NA" des="NA" />
+        </cmd>
+        <cmd name="TOGGLE_NERF" des="Toggle Nerf" pri="HIGH" default="FORWARD" > <!-- enable/disable nerf gun firing -->
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="BACK" des="Select/back" />
+            <option enum="FORWARD" des="Start/forward" />
+        </cmd>
+        <cmd name="CONFIG_BRINGUP"  des="Config Bringup" pri="LOW" default="FACE_4" >
+            <option enum="DISABLED" des="Disabled" />
+            <option enum="FACE_4" des="Face 4 (down)" />
+        </cmd>
+    </joy>
+</usar>

@@ -1,0 +1,9 @@
+<!-- respawn="true" -->
+<!-- respawn_delay="30" -->
+<!-- required="true" -->
+<!-- ns="usar" -->
+
+<launch>
+    <node pkg="joy" type="joy_node" name="joy_node" output="screen" required="true" ></node>
+    <node pkg="usar_joy" type="usar_joy" name="usar_joy" output="screen" required="true" ></node>
+</launch>

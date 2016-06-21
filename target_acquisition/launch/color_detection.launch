@@ -1,0 +1,9 @@
+<!-- respawn="true" -->
+<!-- respawn_delay="30" -->
+<!-- required="true" -->
+<!-- ns="usar" -->
+
+<launch>
+    <node pkg="target_aquisition" type="color_detection" name="color_detection" output="screen"></node>
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure"></node>
+</launch>
