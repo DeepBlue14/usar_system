@@ -1,7 +1,7 @@
-#robot_operator_ui
+# robot_operator_ui
 =====
 
-###**Project Synopsis**
+### **Project Synopsis**
 
 This module is a graphical user interface for a human to teleoperate a robot using a game controler.
 

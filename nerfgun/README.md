@@ -1,10 +1,10 @@
-#nerfgun
+# nerfgun
 
-#!!NOTE!!
+# !!NOTE!!
 
 **Yeah, these instructions are a mess.  I'll clean them up ASAP.**
 
-###**Install**
+### **Install**
 
 *Device setup*
 Plug in the USB missile launcher.
@@ -24,7 +24,7 @@ sudo chmod 777 /dev/bus/usb/010/013
 Plug a game controller into the computer.
 
 
-###**Build & Run**
+### **Build & Run**
 
 **Build**
 From your catkin_ws, run ```catkin_make```.

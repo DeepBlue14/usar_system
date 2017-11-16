@@ -1,6 +1,6 @@
-###**Build & Run**
+### **Build & Run**
 
-###**Project Synopsis**
+### **Project Synopsis**
 
 This module detects two sets of targets.
 
@@ -9,7 +9,7 @@ This module detects two sets of targets.
 **2:** Using HSV image data, this program allows the user to dynamically
 select a specific color range as the target.
 
-###**Build & Run**
+### **Build & Run**
 
 Face capture
 ```

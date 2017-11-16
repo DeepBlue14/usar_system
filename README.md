@@ -1,6 +1,6 @@
-![Logo](https://github.com/DeepBlue14/mobile_robotics_1/blob/master/final_project/usar_teleop/operator_ui/res/icon_small.png)
+![Logo](https://github.com/DeepBlue14/usar_system/blob/master/operator_ui/res/icon_small.png)
 
-#usar_teleop
+# usar_teleop
 *Final project for [92.450: Mobile Robotics I][3], with [Dr. Fred Martin][4]*
 
 *Author/Maintainer:* James Kuczynski,  
@@ -12,7 +12,7 @@
 =====
 
 
-###**Index**
+### **Index**
 - [Project Synopsis](#project_synopsis)
 - [Introduction]
 - [Modules]
@@ -37,12 +37,12 @@
 - [Acknowledgements](#acknowledgements)
 
 
-###**Project Synopsis**
+### **Project Synopsis**
 
 This project is a implementation of a tactical urban search and rescue (USAR) distributed system.  The author developed it as a class final project for Mobile Robotics 1 with Dr. Fred Martin at UMass Lowell.
 
 
-###**Introduction**
+### **Introduction**
 
 This system includes modules for robotic field agents and human operators, observers on mobile devices, and Central Command.
 
@@ -50,74 +50,74 @@ This system includes modules for robotic field agents and human operators, obser
 The combined system is about 15 processes, several of which are multithreaded.  These applications are developed in C/C++, Python, BASH, and HTML/JavaScript, with a combined total of some 12,000 lines of code.
 
 
-###**Modules**
+### **Modules**
 
-####**central_control_ui**
+#### **central_control_ui**
 
 This module is the Central Control server and user interface.
 
 
-####**interference**
+#### **interference**
 
 This module intercepts topics, pauses for a configurable amount of time, and republishes them with the prefix ```/interference```.  This allows the simulation of long-distance communications (i.e. to the moon).  It can also add static to video feeds, etc.
 
 **NOTE: This module has only been partialy implemented.**
 
 
-####**nerfgun**
+#### **nerfgun**
 
 This module controls the nerf-gun, converting ROS messages to hexadecimal commands which in sends to the nerf-gun using libusb.
 
 
-####**observer_ui**
+#### **observer_ui**
 
 This is the browser-based observer interface.
 
 
-####**odom_lite**
+#### **odom_lite**
 
 This module computes estimated odometry of the robot.
 
 
-####**operator_ui**
+#### **operator_ui**
 
 Graphical user interface of the robot operator.
 
 
-####**robot_operator_ui**
+#### **robot_operator_ui**
 
 **DEPRECIATED** graphical user interface of the robot operator.
 
 
-####**robot_sim**
+#### **robot_sim**
 
 *For test purpose only*
 Publishers simulated data test test the interfaces.
 
 
-####**robot_voice**
+#### **robot_voice**
 
 ROS Python scripts to enable the robot to play music or say things with a synthasized voice.
 
 
-####**target_aquisition**
+#### **target_aquisition**
 
 Detects targets:
 - People's faces
 - Large red objects
 
 
-####**trajectory_rgbd**
+#### **trajectory_rgbd**
 
 Generates a gun scope.  Checks to see the distance of a target from the nerf-gun.  If it is within range (i.e. two meters) the gun scope will turn green, otherwise the scope will be red.
 
 
-####**usar_joy**
+#### **usar_joy**
 
 Converts the game controller data into individual topics for the user interfaces.
 
 
-###**Dependencies**
+### **Dependencies**
 
 **Hardware**
 - Turtlebot
@@ -138,7 +138,7 @@ Converts the game controller data into individual topics for the user interfaces
 - PCL >= 1.7.0
 
 
-###**Install**
+### **Install**
 
 **NOTE: Do NOT implement the install instructions.  At the moment, no such install script exists.  Also the software is VERY unstable.**
 
@@ -152,16 +152,16 @@ sudo chmod +x install.bash
 ```
 
 
-###**Build & Run**
+### **Build & Run**
 
-####**Build**
+#### **Build**
 ```
 cd catkin_ws
 source devel/setup.bash
 catkin_make
 ```
 
-####**Run**
+#### **Run**
 
 
 
@@ -174,7 +174,7 @@ roslaunch nerfgun nerfgun_bringup.launch
 rosrun sound_play soundplay_node.py
 
 rosrun robot_voice music_player.py
-#OR
+#### OR
 rosrun robot_voice RobotTalker.py
 ```
 
@@ -216,12 +216,12 @@ Sign in (the default username and password are both "default")
 Open a new tab.  Go to: http://camera/rgb/image_rect_color
 
 
-###**Future Work**
+### **Future Work**
 
 In the future it would be interesting to make this robot more autonomous.
 
 
-###**Acknowledgements**
+### **Acknowledgements**
 
 *TBA...*
 

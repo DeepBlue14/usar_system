@@ -1,14 +1,14 @@
-#usar_joy
+# usar_joy
 =====
 
 
-###**Project Synopsis**
+### **Project Synopsis**
 
 This module maps between the raw ROS game controller data and filters
 it into individual topics, some of which are used by the operator_ui, and some used directly by the robot.
 
 
-###**Dependencies**
+### **Dependencies**
 
 - joy_node
 - a game controller
@@ -17,7 +17,7 @@ it into individual topics, some of which are used by the operator_ui, and some u
 sudo apt-get install ros-indigo-joy*
 ```
 
-###**Build & Run**
+### **Build & Run**
 
 You may have to configure the joystick.
 Reference: http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick

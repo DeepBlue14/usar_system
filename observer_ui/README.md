@@ -1,7 +1,7 @@
-#observer_ui
+# observer_ui
 =====
 
-###**Project Synopsis**
+### **Project Synopsis**
 
 This module is a browser-based web client, which recieves operation data from Central Control in real time.  It may be used by human field agents (such as first responders) with mobile devices.
 
